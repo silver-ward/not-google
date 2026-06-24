@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>search</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<link href="styles.css" rel="stylesheet">
+	</head>
+
+	<body class="adv-font">
+		<div class="d-flex basic-spacing justify-content-end upperbar">
+			<a href="index.html" class="basic-spacing">Google Search</a>
+		</div>
+
+		<div class="content">
+			<h2 style="margin: 5px 0px 40px 15px">Advanced Search</h2>
+			<form action="https://google.com/search" class="basic-spacing">
+				<div id="adv-search-boxes">
+				<h5 style="margin-bottom: 20px">Find pages with</h5>
+				<div>
+					<div id="adv-search-box-title">
+						All of these words:
+					</div>
+					<input type="text" name="as_q">
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						This exact word or phrase:
+					</div>
+					<input type="text" name="as_epq">
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						None of these words:
+					</div>
+					<input type="text" name="as_eq">
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						Site or domain:
+					</div>
+					<input type="text" name="as_sitesearch">
+				</div>
+
+				<h5 style="margin-top: 20px; margin-bottom: 20px;">Then narrow your results by</h5>
+				<div>
+					<div id="adv-search-box-title">
+						File type:
+					</div>
+					<div id="adv-search-boxes">
+						<select id="adv-search-select" name="as_filetype">
+							<option value="">Any format</option>
+							<option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+							<option value="ppt">Microsoft PowerPoint (.ppt)</option>
+							<option value="doc">Microsoft Word (.doc)</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						Last update:
+					</div>
+					<select id="adv-search-select" name="as_qdr">
+						<option value="">Any time</option>
+						<option value="h">Past hour</option>
+						<option value="d">Past 24 hours</option>
+						<option value="w">Past week</option>
+						<option value="m">Past month</option>
+						<option value="y">Past year</option>
+					</select>
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						Language:
+					</div>
+					<select id="adv-search-select" name="lr">
+						<option value="">Any language</option>
+						<option value="lang_en">English</option>
+						<option value="lang_pt">Português</option>
+						<option value="lang_fr">Français</option>
+						<option value="lang_ja">日本語</option>
+					</select>
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						Region:
+					</div>
+					<select id="adv-search-select" name="cr">
+						<option value="">Any region</option>
+						<option value="countryUS">United States</option>
+						<option value="countryGB">United Kingdom</option>
+						<option value="countryBR">Brazil</option>
+						<option value="countryFR">France</option>
+						<option value="countryJP">Japan</option>
+					</select>
+				</div>
+				<div>
+					<div id="adv-search-box-title">
+						Usage rights:
+					</div>
+					<select id="adv-search-select" name="tbs">
+						<option value="">Not filtered by licence</option>
+						<option value="sur%3Af">Free of charge to use or share</option>
+						<option value="sur%3Afc">Free of charge to use or share, even commercially</option>
+						<option value="sur%3Afm">Free of charge to use, share or modify</option>
+						<option value="sur%3Afmc">Free of charge to use, share, or modify, even commercially</option>
+					</select>
+				</div>
+				</div>
+
+				<div class="search" id="adv-search-box-button">
+					<input type="submit" id="adv-search" value="Advanced Search">
+				</div>
+
+			</form>
+		</div>
+	</body>
+
+</html>
